@@ -1,0 +1,20 @@
+group 'com.uestc'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.apache.poi:poi:3.17'
+    compile 'org.apache.poi:poi-ooxml:3.17'
+    compile 'org.apache.poi:poi-scratchpad:3.17'
+    compile 'org.apache.poi:poi-ooxml-schemas:3.17'
+    compile 'org.apache.poi:poi-excelant:3.17'
+    compile 'net.lingala.zip4j:zip4j:1.3.2'
+}
